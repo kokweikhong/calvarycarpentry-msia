@@ -1,5 +1,6 @@
 "use client";
 
+import HomeAccdrediations from "@/components/HomeAccdrediations";
 import HomeClients from "@/components/HomeClients";
 import HomeFeatures from "@/components/HomeFeatures";
 import HomeHero from "@/components/HomeHero";
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeFeatures />
       <HomeServices />
       <HomeProducts />
+      <HomeAccdrediations />
     </main>
   );
 }
