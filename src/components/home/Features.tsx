@@ -6,10 +6,10 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import feature4 from "../../public/images/home/feature_Reconstituted Bamboo Timber vs. Hardwood vs.Composite.png";
-import feature2 from "../../public/images/home/feature_The right wood for humidy in singapore .jpeg";
-import feature1 from "../../public/images/home/feature_archidex_2023.jpg";
-import feature3 from "../../public/images/home/feature_archifest_2023.png";
+import feature4 from "@/../public/images/home/feature_Reconstituted Bamboo Timber vs. Hardwood vs.Composite.png";
+import feature2 from "@/../public/images/home/feature_The right wood for humidy in singapore .jpeg";
+import feature1 from "@/../public/images/home/feature_archidex_2023.jpg";
+import feature3 from "@/../public/images/home/feature_archifest_2023.png";
 
 type Feature = {
   title: string;
@@ -46,7 +46,7 @@ const features: Feature[] = [
   },
 ];
 
-const HomeFeatures = () => {
+const Features = () => {
   return (
     <div>
       <Swiper
@@ -65,6 +65,7 @@ const HomeFeatures = () => {
           768: {
             slidesPerView: 4,
             spaceBetween: 0,
+            loop: false,
           },
         }}
         loop={true}
@@ -78,6 +79,7 @@ const HomeFeatures = () => {
                 src={feature.image}
                 alt={feature.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="w-full h-full"
               />
             </div>
@@ -98,4 +100,4 @@ const HomeFeatures = () => {
   );
 };
 
-export default HomeFeatures;
+export default Features;

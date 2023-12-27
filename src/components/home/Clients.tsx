@@ -2,20 +2,20 @@
 
 import Image from "next/image";
 
+import client1 from "@/../public/images/clients/CIAP.svg";
+import client2 from "@/../public/images/clients/DCA.svg";
+import client3 from "@/../public/images/clients/HYLA.svg";
+import client4 from "@/../public/images/clients/MAKK.svg";
+import client5 from "@/../public/images/clients/MKPL.svg";
+import client6 from "@/../public/images/clients/P+A 1.svg";
+import client7 from "@/../public/images/clients/Wallflower 1.svg";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import client1 from "../../public/images/clients/CIAP.svg";
-import client2 from "../../public/images/clients/DCA.svg";
-import client3 from "../../public/images/clients/HYLA.svg";
-import client4 from "../../public/images/clients/MAKK.svg";
-import client5 from "../../public/images/clients/MKPL.svg";
-import client6 from "../../public/images/clients/P+A 1.svg";
-import client7 from "../../public/images/clients/Wallflower 1.svg";
 
 const clients = [client1, client2, client3, client4, client5, client6, client7];
 
-const HomeClients = () => {
+const Clients = () => {
   return (
     <div>
       <Swiper
@@ -43,4 +43,4 @@ const HomeClients = () => {
   );
 };
 
-export default HomeClients;
+export default Clients;

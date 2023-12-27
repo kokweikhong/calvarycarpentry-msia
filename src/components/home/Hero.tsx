@@ -1,6 +1,6 @@
-const HomeHero = () => {
+const Hero = () => {
   return (
-    <div className="relative h-screen z-[10000]">
+    <section className="relative h-screen">
       {/* Video Background */}
       <video
         className="w-full h-full object-cover md:hidden"
@@ -9,7 +9,7 @@ const HomeHero = () => {
         loop
         onCanPlay={(e) => (e.currentTarget.playbackRate = 0.5)}
       >
-        <source src={"/videos/homepage_potrait.mp4"} type="video/mp4" />
+        <source src={"/videos/homepage_portrait.mp4"} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <video
@@ -40,8 +40,8 @@ const HomeHero = () => {
         </a>
         <p className="mt-4">We’ve Got Wood For You</p>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default HomeHero;
+export default Hero;

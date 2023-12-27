@@ -1,15 +1,15 @@
+import productAccoya from "@/../public/images/home/product_accoya.jpg";
+import productCompositeDecking from "@/../public/images/home/product_composite_decking.jpg";
+import productEngineeredFlooring from "@/../public/images/home/product_engineered_flooring.jpg";
+import productMosoBamboo from "@/../public/images/home/product_moso_bamboo.jpeg";
+import productTimberDecking from "@/../public/images/home/product_timber_decking.jpg";
 import Image from "next/image";
-import productAccoya from "../../public/images/home/product_accoya.jpg";
-import productCompositeDecking from "../../public/images/home/product_composite_decking.jpg";
-import productEngineeredFlooring from "../../public/images/home/product_engineered_flooring.jpg";
-import productMosoBamboo from "../../public/images/home/product_moso_bamboo.jpeg";
-import productTimberDecking from "../../public/images/home/product_timber_decking.jpg";
 
-import brandAccoya from "../../public/images/home/brand_accoya.svg";
-import brandCalvaryComposite from "../../public/images/home/brand_calvary_composite.svg";
-import brandKandinsky from "../../public/images/home/brand_kandinsky.svg";
-import brandMosoBamboo from "../../public/images/home/brand_moso_bamboo.svg";
-import brandTimberDecking from "../../public/images/home/brand_timber_decking.svg";
+import brandAccoya from "@/../public/images/home/brand_accoya.svg";
+import brandCalvaryComposite from "@/../public/images/home/brand_calvary_composite.svg";
+import brandKandinsky from "@/../public/images/home/brand_kandinsky.svg";
+import brandMosoBamboo from "@/../public/images/home/brand_moso_bamboo.svg";
+import brandTimberDecking from "@/../public/images/home/brand_timber_decking.svg";
 
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
@@ -58,7 +58,7 @@ const products: Product[] = [
   },
 ];
 
-const HomeProducts = () => {
+const Products = () => {
   return (
     <section className="section white">
       <div className="row">
@@ -139,4 +139,4 @@ const HomeProducts = () => {
   );
 };
 
-export default HomeProducts;
+export default Products;

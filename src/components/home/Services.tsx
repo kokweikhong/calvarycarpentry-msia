@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import exteriorSvg from "../../public/images/home/exterior.svg";
-import interiorSvg from "../../public/images/home/interior.svg";
-import maintenanceSvg from "../../public/images/home/maintenance.svg";
+import exteriorSvg from "@/../public/images/home/exterior.svg";
+import interiorSvg from "@/../public/images/home/interior.svg";
+import maintenanceSvg from "@/../public/images/home/maintenance.svg";
 
 type Service = {
   title: string;
@@ -31,17 +31,14 @@ const services: Service[] = [
   },
 ];
 
-const HomeServices = () => {
+const Services = () => {
   return (
     <section className="container mx-auto">
       <div className="relative z-3 mt-[50px]">
         <div className="container mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-12 auto-rows-fr gap-6">
             {services.map((service) => (
-              <div
-                key={service.title}
-                className="col-span-full md:col-span-6 lg:col-span-4"
-              >
+              <div key={service.title} className="col-span-full lg:col-span-4">
                 <div className="bg-[#fff] shadow-[0_2px_48px_0_rgba(0,0,0,0.13)] py-[55px] px-[40px] text-center mb-[30px] hover:-mt-[10px] transition-all duration-300">
                   <div className="w-[60px] h-[60px] block mb-[30px] mx-auto">
                     <Image
@@ -74,4 +71,4 @@ const HomeServices = () => {
   );
 };
 
-export default HomeServices;
+export default Services;
