@@ -29,8 +29,8 @@ const Hero = () => {
           Premium Timber Artistry
         </h1>
         <p className="text-lg text-center mb-8">
-          Crafting Excellence in Timber: Discover Calvary Carpentry's Expert
-          Woodworkers
+          {`Crafting Excellence in Timber: Discover Calvary Carpentry's Expert
+          Woodworkers`}
         </p>
         <a
           href="#"

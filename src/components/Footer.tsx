@@ -66,9 +66,9 @@ const Footer = () => {
             />
           </div>
           <p>
-            Welcome to Calvary Carpentry Sdn. Bhd., where exceptional
+            {`Welcome to Calvary Carpentry Sdn. Bhd., where exceptional
             craftsmanship meets unwavering trust. With a legacy of excellence
-            established by prestigious brands in Singapore, we've wood for you.
+            established by prestigious brands in Singapore, we've wood for you.`}
           </p>
         </div>
 
@@ -167,8 +167,8 @@ const Footer = () => {
           <div className="space-y-4 mt-4">
             <h4 className="uppercase">Malaysia</h4>
             <p>
-              No. 26, Jalan Laman Setia 7/6, Taman Laman Setia,81550 Gelang
-              Patah, Johor, Malaysia.
+              {`No. 26, Jalan Laman Setia 7/6, Taman Laman Setia, 81550 Gelang
+              Patah, Johor, Malaysia.`}
             </p>
             <div>
               <div className="flex gap-2 items-center">
